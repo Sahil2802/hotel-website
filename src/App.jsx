@@ -1,8 +1,11 @@
+import Layout from "./components/Layout/Layout";
+import Hero from "./components/sections/Hero";
+
 const App = () => {
   return (
-    <div>
-      <h1>HI</h1>
-    </div>
+    <Layout>
+      <Hero />
+    </Layout>
   );
 };
 
