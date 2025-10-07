@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #fefefe;
+  background-color: #F6F6F6;
   font-family: 'Poppins', sans-serif;
   color: #211F20;
 }
@@ -25,5 +25,39 @@ h1, h2, h3 {
 }
 
 .btn-color {
-  background-color: #364C84;
+  background-color: #CC9C5C;
+}
+
+.white-bg{
+  background-color: #FFFBF6;
+}
+
+.font-color {
+  color: #4f3d25;
+}
+
+.p-font-color {
+  color: #614b2e;
+}
+
+.nav-gradient {
+background: #000000;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.01) 100%);
+}
+
+.img-gradient {
+background: #000000;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.46) 50%, rgba(0, 0, 0, 0.04) 100%);
+}
+
+@utility flex-center {
+    @apply flex justify-center items-center;
+}
+
+@utility col-center {
+    @apply flex flex-col justify-center items-center;
+}
+
+@utility abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }

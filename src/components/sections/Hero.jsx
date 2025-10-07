@@ -16,29 +16,26 @@ const Hero = () => {
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <section
         id="home"
-        className="min-h-screen w-screen flex items-center justify-center "
+        className="min-h-screen w-full flex-center img-gradient"
       >
+        {/* Background Image Section */}
         <div
-          className="relative h-[70vh] w-full bg-cover bg-center bg-no-repeat"
+          className="relative h-screen w-full bg-cover bg-center bg-no-repeat rounded-md"
           style={{ backgroundImage: `url(${bgImg})` }}
         >
-          {/* Background Image Section */}
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/45"></div>
 
           {/* Main Content Section */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
-            <p className="tracking-[0.3em] uppercase text-sm text-gray-200">
-              Welcome to
-            </p>
-            <h1 className="text-8xl font-bold mb-3  ">Haven</h1>
-            <p className="text-sm text-gray-200">
+          <div className="absolute inset-0 col-center text-center text-white z-10">
+            <h1 className="text-8xl mb-3  "> Your Serene Escape Awaits</h1>
+            <p className="text-md text-gray-100">
               Experience Comfort & Luxury at Haven
             </p>
           </div>
 
           {/* Date and Guest Selection Section */}
-          <div className="absolute bg-white z-40 w-3/5 left-1/2 -translate-x-1/2 bottom-[-20px] p-4 rounded-lg shadow-lg grid grid-cols-7 gap-4 ">
+          <div className="absolute white-bg z-10 w-3/5 left-1/2 -translate-x-1/2 bottom-[45px] p-4 rounded-lg shadow-lg grid grid-cols-7 gap-4 ">
             {/* Check-In Date Picker */}
             <div className="col-span-2">
               <DatePicker
